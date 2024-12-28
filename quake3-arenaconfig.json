@@ -34,8 +34,7 @@
         "FieldName": "servermod",
         "InputType": "enum",
         "ParamFieldName": "mod",
-        "DefaultValue": "baseq3",
-        "Placeholder": "baseq3",
+        "DefaultValue": "baseq3",        
         "EnumValues": {
             "baseq3": "Quake3 Standard",
             "excessiveplus": "ExcessivePlus",
