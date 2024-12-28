@@ -26,6 +26,23 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Server Mod",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Selects the mode for the game. Regular Quake3 or ExcessivePlus. If custom the name has to be specified in Server Mod Name",
+        "Keywords": "mod",
+        "FieldName": "servermod",
+        "InputType": "enum",
+        "ParamFieldName": "mod",
+        "DefaultValue": "baseq3",
+        "Placeholder": "baseq3",
+        "EnumValues": {
+            "baseq3": "Quake3 Standard",
+            "excessiveplus": "ExcessivePlus",
+            "{{mod}}": "Custom (Set value in Server Mod Name)"
+        }
+    },    
+    {
         "DisplayName": "Server Mod Name",
         "Category": "Quake III Arena:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -34,8 +51,8 @@
         "FieldName": "mod",
         "InputType": "text",
         "ParamFieldName": "mod",
-        "DefaultValue": "baseq3",
-        "Placeholder": "baseq3",
+        "DefaultValue": "",
+        "Placeholder": "",
         "EnumValues": {}
     },
     {

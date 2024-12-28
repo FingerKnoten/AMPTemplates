@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "{{mod}}/base.cfg",
+        "ConfigFile": "{{servermod}}/base.cfg",
         "ConfigType": "kvp",
         "ConfigFormat": "{0} \"{1}\"",
         "Subsections": [

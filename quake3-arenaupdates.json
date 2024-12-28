@@ -1,6 +1,6 @@
 [
     {
-        "UpdateStageName": "Server Download",
+        "UpdateStageName": "Download Quake3e",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/ec-/Quake3e/releases/download/latest/quake3e-linux-x86_64.zip",
@@ -10,7 +10,7 @@
         "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Server Files Extract",
+        "UpdateStageName": "Cleanup unnecessary Quake3e files ",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
@@ -18,7 +18,7 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "SteamCMD Game Download",
+        "UpdateStageName": "Download Quake3 Client from Steam",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "2200",
@@ -26,7 +26,7 @@
         "ForceDownloadPlatform": "Windows"
     },    
     {
-        "UpdateStageName": "Client File Copy",
+        "UpdateStageName": "Copy Pak0 and cleanup rest",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
@@ -34,8 +34,8 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Patch Files Download",
-        "UpdateSourcePlatform": "All",
+        "UpdateStageName": "Download latest patch",
+        "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://files.ioquake3.org/quake3-latest-pk3s.zip",
         "UpdateSourceTarget": "{{$FullRootDir}}",
@@ -44,11 +44,29 @@
         "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Patch Files Copy",
+        "UpdateStageName": "Copy Patch files and cleanup",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
         "UpdateSourceArgs": "-c \"\\cp -rf ./quake3-arena/quake3-latest-pk3s/baseq3/*.pk3 ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && rm -rf ./quake3-arena/quake3-latest-pk3s/ >/dev/null 2>&1\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Download ExcessivePlus",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://www.excessiveplus.net/files/release/xp-2.3.zip",
+        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Copy ExcessivePlus and cleanup",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"\\mv ./quake3-arena/excessiveplus/./quake3-arena/server/ >/dev/null 2>&1 && rm -rf ./quake3-arena/*.bat >/dev/null 2>&1 && rm -rf ./quake3-areana/excessiveplus/tools >/dev/null 2>&1 && rm -rf ./quake3-areana/excessiveplus/hud >/dev/null 2>&1 && rm -rf ./quake3-areana/excessiveplus/crontab.txt >/dev/null 2>&1\"",
         "SkipOnFailure": false
     },
     {
