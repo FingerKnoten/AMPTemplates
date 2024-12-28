@@ -540,6 +540,37 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Enable Warmup",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "If enabled, before a round starts there will be a warmup phase. The time of the warmup phase can be controlled with setting Warmup Time",
+        "Keywords": "warmup,g_dowarmup",
+        "FieldName": "g_dowarmup",
+        "InputType": "checkbox",
+        "ParamFieldName": "g_dowarmup",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Warmup Time",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Controls the duration of the warmup phase. Warmup has to be enabled to work",
+        "Keywords": "warmup, g_warmup",
+        "FieldName": "g_warmup",
+        "InputType": "number",
+        "ParamFieldName": "g_warmup",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "5",
+        "Placeholder": "5",
+        "Suffix": "seconds",
+        "EnumValues": {}
+    },    
+    {
         "DisplayName": "Enable Auto Team Joining",
         "Category": "Quake III Arena:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
