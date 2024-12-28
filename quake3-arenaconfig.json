@@ -123,7 +123,24 @@
             "False": "0",
             "True": "1"
         }
-    },
+    },  
+    {
+        "DisplayName": "Quake Virtual Machine Mode",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Controls the mode of the Quake 3 Virtual Machine. Possible values are 0: Native code execution (fastest), 1: Interpreted bytecode execution (slowest), 2 (default): Compiled bytecode execution (balanced performance and portability). Note that setting this to 0 may prevent playing on pure servers, as these servers typically require the use of the Quake 3 VM",
+        "Keywords": "virtual,qvm,vm_game",
+        "FieldName": "vm_game",
+        "InputType": "enum",
+        "ParamFieldName": "sv_pure",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "2",
+        "EnumValues": {
+            "0": "0 - Native (fastest)",
+            "1": "1 - Interpreted (slowest)",
+            "2": "2 - Compiled (balanced)"
+        }
+    },    
     {
         "DisplayName": "Allow Cheats",
         "Category": "Quake III Arena:stadia_controller",
