@@ -1,38 +1,20 @@
 [
     {
         "UpdateStageName": "Server Download",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://files.ioquake3.org/Windows.zip",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Server Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://files.ioquake3.org/Linux.zip",
+        "UpdateSourceData": "https://github.com/ec-/Quake3e/releases/download/latest/quake3e-linux-x86_64.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Server Files Extract",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C cd quake3-arena\\server\\ && tar -xf release-mingw64-x86_64.zip > NUL 2>&1 && del /Q /S release-mingw64-x86_64.zip > NUL 2>&1",
-        "SkipOnFailure": false
     },
     {
         "UpdateStageName": "Server Files Extract",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd ./quake3-arena/server/ && unzip -ao release-linux-x86_64.zip >/dev/null 2>&1 && rm -f release-linux-x86_64.zip >/dev/null 2>&1 && chmod +x ioq3ded.x86_64\"",
+        "UpdateSourceArgs": "-c \"cd ./quake3-arena/server/ && unzip -ao quake3e-linux-x86_64.zip >/dev/null 2>&1 && rm -f quake3e-linux-x86_64.zip >/dev/null 2>&1 && rm -f quake3e-vulkan.x64 > /dev/null 2>&1 && rm -f quake3e.x64 > /dev/null 2>&1 && chmod +x quake3e.ded.x64\"",
         "SkipOnFailure": false
     },
     {
@@ -42,15 +24,7 @@
         "UpdateSourceData": "2200",
         "UpdateSourceTarget": "{{$FullRootDir}}client",
         "ForceDownloadPlatform": "Windows"
-    },
-    {
-        "UpdateStageName": "Client File Copy",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C xcopy /E /Y /I quake3-arena\\client\\baseq3\\pak0.pk3 quake3-arena\\server\\baseq3\\ > NUL 2>&1 && rmdir /Q /S quake3-arena\\client\\ > NUL 2>&1",
-        "SkipOnFailure": false
-    },
+    },    
     {
         "UpdateStageName": "Client File Copy",
         "UpdateSourcePlatform": "Linux",
@@ -68,15 +42,7 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Patch Files Copy",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C xcopy /E /Y /I quake3-arena\\quake3-latest-pk3s\\baseq3\\*.pk3 quake3-arena\\server\\baseq3\\ > NUL 2>&1 && xcopy /E /Y /I quake3-arena\\quake3-latest-pk3s\\missionpack\\*.pk3 quake3-arena\\server\\missionpack\\ > NUL 2>&1 && rmdir /Q /S quake3-arena\\quake3-latest-pk3s\\ > NUL 2>&1",
-        "SkipOnFailure": false
-    },
+    },    
     {
         "UpdateStageName": "Patch Files Copy",
         "UpdateSourcePlatform": "Linux",
@@ -89,7 +55,7 @@
         "UpdateStageName": "Server.cfg Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/CubeCoders/AMPTemplates/main/quake3-arenaserver.cfg",
+        "UpdateSourceData": "https://github.com/FingerKnoten/AMPTemplates/blob/main/quake3-arenaserver.cfg",
         "UpdateSourceArgs": "server.cfg",
         "UpdateSourceTarget": "{{$FullBaseDir}}baseq3",
         "OverwriteExistingFiles": false
