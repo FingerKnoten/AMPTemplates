@@ -42,5 +42,22 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Patch Files Copy",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"\\cp -rf ./quake3-arena/quake3-latest-pk3s/baseq3/*.pk3 ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && \\cp -rf ./quake3-arena/quake3-latest-pk3s/missionpack/*.pk3 ./quake3-arena/server/missionpack/ >/dev/null 2>&1 && rm -rf ./quake3-arena/quake3-latest-pk3s/ >/dev/null 2>&1\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Server.cfg Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/FingerKnoten/AMPTemplates/blob/main/quake3-arenaserver.cfg",
+        "UpdateSourceArgs": "server.cfg",
+        "UpdateSourceTarget": "{{$FullBaseDir}}baseq3",
+        "OverwriteExistingFiles": false
     }
 ]
