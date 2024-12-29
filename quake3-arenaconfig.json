@@ -746,4 +746,26 @@
             "True": "1"
         }
     }
+    {
+        "DisplayName": "Excessive Plus Config",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "ExcessivePlus:settings:3",
+        "Description": "Controls the mode for ExcessivePlus",
+        "Keywords": "excessive,excessiveplus,mode",
+        "FieldName": "xp_config",
+        "InputType": "enum",
+        "ParamFieldName": "xp_config",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "baseq3.cfg",
+        "EnumValues": {
+            "baseq3.cfg": "Quake 3 Standard",
+            "default.cfg": "Default ExcessivePlus",
+            "instagib.cfg": "Instagib",
+            "excessive1.cfg": "Excessive 1",
+            "excessive2.cfg": "Excessive 2",
+            "excessive3.cfg": "Excessive 3",
+            "excessive4.cfg": "Excessive 4",
+            "excessive5.cfg": "Excessive 5"
+        }
+    }    
 ]

@@ -46,7 +46,8 @@
                     "seta g_weaponrespawn": "g_weaponrespawn",
                     "seta g_inactivity": "g_inactivity",
                     "seta g_syncronousclients": "g_syncronousclients",
-                    "seta sv_floodProtect": "sv_floodProtect"
+                    "seta sv_floodProtect": "sv_floodProtect",
+                    "seta xp_config": "baseq3"
                 }
             }
         ]
