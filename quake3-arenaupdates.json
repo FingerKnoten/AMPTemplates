@@ -71,7 +71,7 @@
     },
     {
         "UpdateStageName": "Download instagib config",
-        "UpdateSourcePlatform": "All",
+        "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/FingerKnoten/AMPTemplates/main/quake3-arenainstagib.cfg",
         "UpdateSourceArgs": "instagib.cfg",
