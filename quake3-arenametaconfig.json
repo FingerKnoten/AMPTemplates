@@ -47,7 +47,8 @@
                     "seta g_inactivity": "g_inactivity",
                     "seta g_syncronousclients": "g_syncronousclients",
                     "seta sv_floodProtect": "sv_floodProtect",
-                    "seta xp_config": "baseq3"
+                    "seta xp_config": "baseq3",
+                    "seta xp_teamBalance": "1"
                 }
             }
         ]

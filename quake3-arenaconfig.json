@@ -767,5 +767,21 @@
             "excessive4.cfg": "Excessive 4",
             "excessive5.cfg": "Excessive 5"
         }
+    },
+    {
+        "DisplayName": "Enable Team Balance",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "ExcessivePlus:settings:3",
+        "Description": "Try to aubotabalance teams",
+        "Keywords": "autobalance, balance, excessive, excessiveplus",
+        "FieldName": "xp_teamBalance",
+        "InputType": "checkbox",
+        "ParamFieldName": "xp_teamBalance",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
     }    
 ]
