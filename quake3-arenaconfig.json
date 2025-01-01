@@ -771,7 +771,7 @@
     {
         "DisplayName": "Enable Team Balance",
         "Category": "Quake III Arena:stadia_controller",
-        "Subcategory": "ExcessivePlus:settings:3",
+        "Subcategory": "Gameplay:joystick:2",
         "Description": "Try to aubotabalance teams",
         "Keywords": "autobalance, balance, excessive, excessiveplus",
         "FieldName": "xp_teamBalance",
