@@ -751,7 +751,7 @@
         "Category": "Quake III Arena:stadia_controller",
         "Subcategory": "ExcessivePlus:settings:3",
         "Description": "Controls the mode for ExcessivePlus",
-        "Keywords": "excessive,excessiveplus,mode",
+        "Keywords": "excessive,excessiveplus,mode,xp_config",
         "FieldName": "xp_config",
         "InputType": "enum",
         "ParamFieldName": "xp_config",
@@ -771,14 +771,14 @@
     {
         "DisplayName": "Enable Team Balance",
         "Category": "Quake III Arena:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
+        "Subcategory": "ExcessivePlus:settings:3",
         "Description": "Try to aubotabalance teams",
-        "Keywords": "autobalance, balance, excessive, excessiveplus",
+        "Keywords": "autobalance, balance, excessive, excessiveplus, xp_teamBalance",
         "FieldName": "xp_teamBalance",
         "InputType": "checkbox",
         "ParamFieldName": "xp_teamBalance",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
+        "DefaultValue": "False",
         "EnumValues": {
             "False": "0",
             "True": "1"
