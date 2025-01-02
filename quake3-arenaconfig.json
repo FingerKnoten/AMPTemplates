@@ -783,5 +783,17 @@
             "False": "0",
             "True": "1"
         }
-    }    
+    },
+    {
+        "DisplayName": "Additional Configuration Files",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "ExcessivePlus:settings:3",
+        "Description": "ExcessivePlus supports setting up map rotation in rotation.txt, a motd in motd.txt, vote configuration in vote.txt and bans in bans.txt. You can edit these files using the File Manager in the excessiveplus subfolder",
+        "Keywords": "configfile, rotation, ban, motd, vote",
+        "FieldName": "AdditionalSettingsFiles",
+        "InputType": "hidden",
+        "ParamFieldName": "AdditionalSettingsFiles",
+        "IncludeInCommandLine": false,
+        "EnumValues": {}
+    }
 ]

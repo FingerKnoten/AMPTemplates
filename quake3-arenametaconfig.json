@@ -48,7 +48,10 @@
                     "seta g_syncronousclients": "g_syncronousclients",
                     "seta sv_floodProtect": "sv_floodProtect",
                     "seta xp_config": "xp_config",
-                    "seta xp_teamBalance": "xp_teamBalance"
+                    "seta xp_teamBalance": "xp_teamBalance",
+                    "seta xp_motd": "motd.txt",
+                    "seta xp_vote": "callvote.txt",
+                    "seta xp_rotation": "rotation.txt"
                 }
             }
         ]
