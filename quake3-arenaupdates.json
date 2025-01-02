@@ -14,7 +14,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd ./quake3-arena/server/ && rm -f quake3e-vulkan.x64>/dev/null 2>&1 && rm -f quake3e.x64 > /dev/null 2>&1 && chmod +x quake3e.ded.x64\"",
+        "UpdateSourceArgs": "-c \"\\cd ./quake3-arena/server/ && rm -f quake3e-vulkan.x64>/dev/null 2>&1 && rm -f quake3e.x64 > /dev/null 2>&1 && chmod +x quake3e.ded.x64\"",
         "SkipOnFailure": false
     },
     {
@@ -30,7 +30,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir ./quake3-arena/server/baseq3 >/dev/null 2>&1 && cp -rf ./quake3-arena/client/baseq3/pak0.pk3 ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && rm -rf ./quake3-arena/client/ >/dev/null 2>&1\"",
+        "UpdateSourceArgs": "-c \"\\mkdir ./quake3-arena/server/baseq3 >/dev/null 2>&1 && cp -rf ./quake3-arena/client/baseq3/pak0.pk3 ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && rm -rf ./quake3-arena/client/ >/dev/null 2>&1\"",
         "SkipOnFailure": false
     },
     {
@@ -48,7 +48,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cp -rf ./quake3-arena/quake3-latest-pk3s/baseq3/*.pk3 ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && rm -rf ./quake3-arena/quake3-latest-pk3s/ >/dev/null 2>&1\"",
+        "UpdateSourceArgs": "-c \"\\cp -rf ./quake3-arena/quake3-latest-pk3s/baseq3/*.pk3 ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && rm -rf ./quake3-arena/quake3-latest-pk3s/ >/dev/null 2>&1\"",
         "SkipOnFailure": false
     },
     {
@@ -66,7 +66,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mv ./quake3-arena/excessiveplus/ ./quake3-arena/server/ >/dev/null 2>&1\"",
+        "UpdateSourceArgs": "-c \"\\mv ./quake3-arena/excessiveplus/ ./quake3-arena/server/ >/dev/null 2>&1\"",
         "SkipOnFailure": false
     },
     {
@@ -74,7 +74,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"rm -rf ./quake3-arena/*.bat >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/tools >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/hud >/dev/null 2>&1\"",
+        "UpdateSourceArgs": "-c \"\\rm -rf ./quake3-arena/*.bat >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/server.cfg >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/tools >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/hud >/dev/null 2>&1\"",
         "SkipOnFailure": false
     },
     {
