@@ -60,38 +60,5 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Copy ExcessivePlus",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\mv ./quake3-arena/excessiveplus/ ./quake3-arena/server/ >/dev/null 2>&1\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Cleanup",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\rm -rf ./quake3-arena/*.bat >/dev/null 2>&1 && \\rm -rf ./quake3-areana/server/excessiveplus/server.cfg >/dev/null 2>&1 && \\rm -rf ./quake3-areana/server/excessiveplus/tools >/dev/null 2>&1 && \\rm -rf ./quake3-areana/server/excessiveplus/hud >/dev/null 2>&1\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Cleanup Server.cfg",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\rm -rf ./quake3-arena/server/excessiveplus/server.cfg >/dev/null 2>&1\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Download instagib config",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/FingerKnoten/AMPTemplates/main/quake3-arenainstagib.cfg",
-        "UpdateSourceArgs": "instagib.cfg",
-        "UpdateSourceTarget": "{{$FullBaseDir}}excessiveplus/conf",
-        "OverwriteExistingFiles": true
     }
 ]
