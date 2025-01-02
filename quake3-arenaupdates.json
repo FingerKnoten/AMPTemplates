@@ -70,11 +70,11 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Copy ExcessivePlus and cleanup",
+        "UpdateStageName": "Cleanup",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\rm -rf ./quake3-arena/*.bat >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/server.cfg >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/tools >/dev/null 2>&1 && rm -rf ./quake3-areana/server/excessiveplus/hud >/dev/null 2>&1\"",
+        "UpdateSourceArgs": "-c \"\\rm -rf ./quake3-arena/*.bat >/dev/null 2>&1 && \\rm -rf ./quake3-areana/server/excessiveplus/server.cfg >/dev/null 2>&1 && \\rm -rf ./quake3-areana/server/excessiveplus/tools >/dev/null 2>&1 && \\rm -rf ./quake3-areana/server/excessiveplus/hud >/dev/null 2>&1\"",
         "SkipOnFailure": false
     },
     {
