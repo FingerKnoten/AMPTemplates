@@ -749,7 +749,7 @@
     {
         "DisplayName": "Excessive Plus Config",
         "Category": "Quake III Arena:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
+        "Subcategory": "ExcessivePlus:box_edit:3",
         "Description": "Controls the mode for ExcessivePlus",
         "Keywords": "xp_config",
         "FieldName": "xp_config",
@@ -771,7 +771,7 @@
     {
         "DisplayName": "Enable Team Balance",
         "Category": "Quake III Arena:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
+        "Subcategory": "ExcessivePlus:box_edit:3",
         "Description": "Try to aubotabalance teams",
         "Keywords": "xp_teamBalance",
         "FieldName": "xp_teamBalance",
