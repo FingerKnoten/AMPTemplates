@@ -26,7 +26,7 @@
         "ForceDownloadPlatform": "Windows"
     },    
     {
-        "UpdateStageName": "Copy Pak0 and cleanup rest",
+        "UpdateStageName": "Copy Pak0 and cleanup client",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
@@ -55,10 +55,17 @@
         "UpdateStageName": "Download ExcessivePlus",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://www.excessiveplus.net/files/release/xp-2.3.zip",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UpdateSourceData": "https://raw.githubusercontent.com/FingerKnoten/AMPTemplates/main/mods/xp.zip",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Move ExcessivePlus",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"\\mv ./quake3-arena/excessiveplus ./quake3-arena/server/ >/dev/null 2>&1\"",
+        "SkipOnFailure": false
     }
 ]
