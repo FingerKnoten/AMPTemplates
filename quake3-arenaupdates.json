@@ -78,6 +78,14 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "Cleanup Server.cfg",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"\\rm -rf ./quake3-arena/server/excessiveplus/server.cfg >/dev/null 2>&1\"",
+        "SkipOnFailure": false
+    },
+    {
         "UpdateStageName": "Download instagib config",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
