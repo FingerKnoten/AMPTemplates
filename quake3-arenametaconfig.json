@@ -51,7 +51,8 @@
                     "seta xp_teamBalance": "xp_teamBalance",
                     "seta xp_motd": "motd.txt",
                     "seta xp_vote": "callvote.txt",
-                    "seta xp_rotation": "rotation.txt"
+                    "seta xp_rotation": "rotation.txt",
+                    "map": "map_name" 
                 }
             }
         ]
