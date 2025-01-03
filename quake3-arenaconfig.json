@@ -150,7 +150,7 @@
         "InputType": "enum",
         "ParamFieldName": "sv_pure",
         "IncludeInCommandLine": false,
-        "DefaultValue": "2",
+        "DefaultValue": "0",
         "EnumValues": {
             "0": "0 - Native (fastest)",
             "1": "1 - Interpreted (slowest)",
@@ -177,7 +177,7 @@
         "DisplayName": "Initial Game Type",
         "Category": "Quake III Arena:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Sets the game type to start the server with",
+        "Description": "Sets the game type to start the server with. Some options are only valid if Server Mod is ExcessivePlus",
         "Keywords": "game,type,g_gametype",
         "FieldName": "g_gametype",
         "InputType": "enum",
@@ -188,7 +188,11 @@
             "0": "Deathmatch / Free For All (default)",
             "1": "Tourney / One on One",
             "3": "Team Deathmatch",
-            "4": "Capture The Flag"
+            "4": "Capture The Flag",
+            "5": "Return The Flag (ExcessivePlus)",
+            "6": "One Flag CTF (ExcessivePlus)",
+            "7": "Freeze Tag (ExcessivePlus",
+            "8": "Protect The Leader"
         }
     },
     {
@@ -282,8 +286,8 @@
         "MaxValue": "32",
         "ParamFieldName": "sv_maxclients",
         "IncludeInCommandLine": false,
-        "DefaultValue": "8",
-        "Placeholder": "8",
+        "DefaultValue": "16",
+        "Placeholder": "16",
         "Suffix": "clients",
         "EnumValues": {}
     },
@@ -347,8 +351,8 @@
         "InputType": "number",
         "ParamFieldName": "sv_fps",
         "IncludeInCommandLine": false,
-        "DefaultValue": "20",
-        "Placeholder": "20",
+        "DefaultValue": "60",
+        "Placeholder": "60",
         "Suffix": "frames/second",
         "EnumValues": {}
     },
@@ -378,8 +382,8 @@
         "MinValue": "0",
         "ParamFieldName": "sv_minRate",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
-        "Placeholder": "0",
+        "DefaultValue": "25000",
+        "Placeholder": "25000",
         "Suffix": "bytes/second",
         "EnumValues": {}
     },
@@ -394,8 +398,8 @@
         "MinValue": "0",
         "ParamFieldName": "sv_maxRate",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
-        "Placeholder": "0",
+        "DefaultValue": "25000",
+        "Placeholder": "25000",
         "Suffix": "bytes/second",
         "EnumValues": {}
     },
@@ -426,8 +430,8 @@
         "MinValue": "0",
         "ParamFieldName": "sv_maxPing",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
-        "Placeholder": "0",
+        "DefaultValue": "50",
+        "Placeholder": "50",
         "Suffix": "milliseconds",
         "EnumValues": {}
     },
@@ -490,8 +494,8 @@
         "MinValue": "0",
         "ParamFieldName": "bot_minplayers",
         "IncludeInCommandLine": false,
-        "DefaultValue": "5",
-        "Placeholder": "5",
+        "DefaultValue": "4",
+        "Placeholder": "4",
         "EnumValues": {}
     },
     {
@@ -536,8 +540,8 @@
         "InputType": "number",
         "ParamFieldName": "fraglimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
-        "Placeholder": "0",
+        "DefaultValue": "1",
+        "Placeholder": "1",
         "Suffix": "frags",
         "EnumValues": {}
     },
@@ -552,8 +556,8 @@
         "MinValue": "0",
         "ParamFieldName": "timelimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
-        "Placeholder": "0",
+        "DefaultValue": "1",
+        "Placeholder": "1",
         "Suffix": "minutes",
         "EnumValues": {}
     },
@@ -567,9 +571,24 @@
         "InputType": "number",
         "ParamFieldName": "capturelimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": "8",
-        "Placeholder": "8",
+        "DefaultValue": "1",
+        "Placeholder": "1",
         "Suffix": "flags",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Round Limit",
+        "Category": "Quake III Arena:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Sets the number rounds that will be played",
+        "Keywords": "round,limit,tournament,tourney,rounds,roundlimit",
+        "FieldName": "roundlimit",
+        "InputType": "number",
+        "ParamFieldName": "roundlimit",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "Placeholder": "1",
+        "Suffix": "rounds",
         "EnumValues": {}
     },
     {
@@ -582,7 +601,7 @@
         "InputType": "checkbox",
         "ParamFieldName": "g_dowarmup",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
+        "DefaultValue": "1",
         "EnumValues": {
             "False": "0",
             "True": "1"
@@ -613,7 +632,7 @@
         "InputType": "checkbox",
         "ParamFieldName": "g_teamAutoJoin",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
+        "DefaultValue": "1",
         "EnumValues": {
             "False": "0",
             "True": "1"
@@ -629,7 +648,7 @@
         "InputType": "checkbox",
         "ParamFieldName": "g_teamForceBalance",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0",
+        "DefaultValue": "1",
         "EnumValues": {
             "False": "0",
             "True": "1"
