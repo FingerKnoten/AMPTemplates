@@ -59,5 +59,23 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Download server.cfg",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/FingerKnoten/AMPTemplates/main/conf/server.cfg",
+        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Copy server.cfg files and cleanup",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"\\cp -f ./quake3-arena/server.cfg ./quake3-arena/server/baseq3/ >/dev/null 2>&1 && cp -f ./quake3-arena/server.cfg ./quake3-arena/server/excessiveplus/ >/dev/null 2>&1 && rm -f ./quake3-arena/server.cfg >/dev/null 2>&1\"",
+        "SkipOnFailure": false
     }
 ]
