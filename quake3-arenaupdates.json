@@ -59,13 +59,5 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Move ExcessivePlus",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\mv ./quake3-arena/excessiveplus ./quake3-arena/server/ >/dev/null 2>&1\"",
-        "SkipOnFailure": false
     }
 ]
