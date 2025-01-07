@@ -1,7 +1,7 @@
 Meta.DisplayName=Authserver
 Meta.Description=Azerothcore Authserver
 Meta.Arch=x86_64
-Meta.Author=FingerKnoten - Made with AMP Config Generator
+Meta.Author=FingerKnoten
 Meta.URL=https://www.azerothcore.org/
 Meta.MinAMPVersion=2.4.6.6
 Meta.SpecificDockerImage=
@@ -64,7 +64,7 @@ Console.SleepDelayMinutes=5
 Console.DozeDelay=2
 Console.AutoRetryCount=5
 Console.SleepStartThresholdSeconds=25
-Console.AppReadyRegex=^\^Added\\srealm\\s"AzerothCore"\\sat\.\+\\\.\$$
+Console.AppReadyRegex=^Added\srealm\s"AzerothCore"\sat.+\.$
 Console.UserJoinRegex=^$
 Console.UserLeaveRegex=^$
 Console.UserChatRegex=^$
