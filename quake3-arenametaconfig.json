@@ -36,6 +36,7 @@
                     "seta fraglimit": "fraglimit",
                     "seta timelimit": "timelimit",
                     "seta capturelimit": "capturelimit",
+                    "seta roundlimit": "roundlimit",
                     "seta g_dowarmup": "g_dowarmup",
                     "seta g_warmup": "g_warmup",
                     "seta g_teamAutoJoin": "g_teamAutoJoin",
@@ -47,7 +48,12 @@
                     "seta g_inactivity": "g_inactivity",
                     "seta g_syncronousclients": "g_syncronousclients",
                     "seta sv_floodProtect": "sv_floodProtect",
-                    "seta xp_config": "baseq3"
+                    "seta xp_config": "xp_config",
+                    "seta xp_teamBalance": "xp_teamBalance",
+                    "seta xp_motd": "motd.txt",
+                    "seta xp_vote": "callvote.txt",
+                    "seta xp_rotation": "rotation.txt",
+                    "map": "map_name" 
                 }
             }
         ]
