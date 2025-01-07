@@ -1,0 +1,16 @@
+[
+    {
+        "Protocol": "TCP",
+        "Port": "3724",
+        "Name": "Authserver",
+        "Description": "Port used for main game traffic",
+        "Ref": "Authserver"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": "8085",
+        "Name": "Worldserver",
+        "Description": "Port used for main game traffic",
+        "Ref": "Worldserver"
+    }
+]
